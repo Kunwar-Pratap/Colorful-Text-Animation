@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --animation-font: 'Acme', sans-serif;
+}
+
+body {
+    background: #221f2a;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--animation-font);
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+div {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    color: #30f2f2;
+    font-size: 3rem;
+    text-shadow: 0 0 13px #30f2f2, 0 0 26px #30f2f2;
+    border-radius: 22px;
+    cursor: default;
+    animation: textAnimate 1.2s linear infinite;
+
+}
+
+@keyframes textAnimate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(180deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.ml{
+    margin-left: 1rem;
+}
